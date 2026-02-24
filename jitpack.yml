@@ -1,7 +1,7 @@
 jdk:
   - openjdk17
 before_install:
-  - sdk install java 17.0.10-tem
-  - sdk use java 17.0.10-tem
+  - yes | sdkmanager --licenses > /dev/null 2>&1 || true
+  - sdkmanager "platforms;android-36" "build-tools;36.0.0" "ndk;27.2.12479018" "cmake;3.22.1" > /dev/null 2>&1 || true
 install:
   - ./gradlew :blurview:publishToMavenLocal

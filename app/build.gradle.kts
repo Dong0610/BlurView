@@ -5,9 +5,7 @@ plugins {
 
 android {
     namespace = "com.dbv.cutstom.blurview"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.dbv.cutstom.blurview"

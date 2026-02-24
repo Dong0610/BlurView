@@ -11,9 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background_gradient"
-        app:blurLayout_blurRadius="10"
-        app:blurLayout_targetChildBackgroundCornerRadius="16dp"
-        app:blurLayout_targetChildId="@id/blurred_background_view"
+        app:blurRadius="10"
+        app:childBackgroundCornerRadius="16dp"
+        app:targetChildId="@id/blurred_background_view"
         tools:ignore="ContentDescription">
 
         <ImageView
