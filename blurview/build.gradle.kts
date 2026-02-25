@@ -65,7 +65,7 @@ dependencies {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.github.aspect-dev"
+            groupId = "com.github.Dong0610"
             artifactId = "blurview"
             version = "1.0.0"
 
@@ -76,7 +76,7 @@ publishing {
             pom {
                 name.set("BlurView")
                 description.set("Android library for real-time blur effects")
-                url.set("https://github.com/aspect-dev/BlurView")
+                url.set("https://github.com/Dong0610/BlurView")
 
                 licenses {
                     license {
@@ -87,15 +87,15 @@ publishing {
 
                 developers {
                     developer {
-                        id.set("aspect-dev")
-                        name.set("Aspect Dev")
+                        id.set("Dong0610")
+                        name.set("Dong0610")
                     }
                 }
 
                 scm {
-                    connection.set("scm:git:github.com/aspect-dev/BlurView.git")
-                    developerConnection.set("scm:git:ssh://github.com/aspect-dev/BlurView.git")
-                    url.set("https://github.com/aspect-dev/BlurView/tree/main")
+                    connection.set("scm:git:github.com/Dong0610/BlurView.git")
+                    developerConnection.set("scm:git:ssh://github.com/Dong0610/BlurView.git")
+                    url.set("https://github.com/Dong0610/BlurView/tree/master")
                 }
             }
         }

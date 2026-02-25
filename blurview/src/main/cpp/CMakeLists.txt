@@ -105,6 +105,8 @@ find_library(# Sets the name of the path variable.
 # can link multiple libraries, such as libraries you define in this
 # build script, prebuilt third-party libraries, or system libraries.
 
+target_link_options(renderscript-toolkit PRIVATE "-Wl,-z,max-page-size=16384")
+
 target_link_libraries(# Specifies the target library.
                       renderscript-toolkit
 
