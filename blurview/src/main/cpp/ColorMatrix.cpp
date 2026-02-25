@@ -113,6 +113,7 @@ typedef union {
     } u;
 } Key_t;
 
+#ifdef ANDROID_RENDERSCRIPT_TOOLKIT_SUPPORTS_FLOAT
 /* The two data types and their value, as specified in the RenderScript documentation.
  * Only RS_TYPE_UNSIGNED_8 is currently supported.
  *
@@ -121,6 +122,7 @@ typedef union {
  */
 const int RS_TYPE_UNSIGNED_8 = 8;
 const int RS_TYPE_FLOAT_32 = 2;
+#endif  // ANDROID_RENDERSCRIPT_TOOLKIT_SUPPORTS_FLOAT
 
 //Re-enable when intrinsic is fixed
 #if defined(ARCH_ARM64_USE_INTRINSICS)
